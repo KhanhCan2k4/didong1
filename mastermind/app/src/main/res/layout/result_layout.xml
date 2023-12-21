@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/back_bar_height"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/btn_back_size"
+            android:layout_height="@dimen/btn_back_size"
+            android:layout_gravity="center"
+            android:background="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/app_name"
+            android:layout_marginLeft="@dimen/app_margin"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:text="@string/txt_quiz"
+            android:textSize="@dimen/text_size_normal"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+   <TextView
+        android:id="@+id/txtPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:text="@string/txt_point"
+        android:textSize="@dimen/text_point_size" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:text="@string/txt_status"
+        android:textSize="@dimen/text_h2" />
+
+    <ImageView
+        android:id="@+id/image_error"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/app_sub_margin"
+        android:src="@drawable/congrat"/>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity"
+    android:backgroundTint="@color/background_color">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:id="@+id/toolbar"
+        app:title="@string/toolbar_title"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_search_height"
+            android:paddingHorizontal="@dimen/app_padding"
+            android:layout_marginBottom="@dimen/toolbar_height"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="@string/search_content"
+            />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvFolders"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/app_sub_margin"
+        android:layout_weight="7"
+        android:backgroundTint="@color/background_color" />
+</LinearLayout>

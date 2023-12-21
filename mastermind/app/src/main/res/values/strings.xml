@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Mastermind</string>
+    <string name="my_favorite">My favorite</string>
+    <string name="n5">N5 - Basic</string>
+    <string name="n4">N4 - Pre-Intermidiate</string>
+    <string name="n3">N3 - Intermidiate</string>
+    <string name="n2">N2 - Pre-Advanced</string>
+    <string name="n1">N1 - Advanced</string>
+    <string name="opendrawer">open</string>
+    <string name="closeDrawer">close</string>
+    <string name="search_error"><![CDATA[Sorry! we can\'t find this word :<]]></string>
+    <string name="txt_level">N5</string>
+    <string name="txt_word">鞄</string>
+    <string name="txt_furigana">かばん</string>
+    <string name="txt_meanning">bag</string>
+    <string name="toolbar_title" />
+    <string name="search_content">Search at JLPT Mastermind</string>
+    <string name="btn_next">next</string>
+    <string name="txt_quiz">Quiz</string>
+    <string name="txt_point">100</string>
+    <string name="txt_status">Correct: 9/100</string>
+    <string name="txt_folder_name">My Favourite</string>
+    <string name="app_name_font_family">cursive</string>
+    <string name="txt_romaji">Kaban</string>
+    <string name="btn_word_prev"><![CDATA[<]]></string>
+    <string name="btn_word_next"><![CDATA[>]]></string>
+    <string name="setting_info">total</string>
+    <string name="lbl_level">Level:</string>
+    <string name="lbl_meanings">Meanings:</string>
+    <string name="lbl_romaji">Romaji:</string>
+</resources>

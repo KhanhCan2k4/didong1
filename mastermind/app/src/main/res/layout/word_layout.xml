@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/btn_back_size"
+            android:layout_height="@dimen/btn_back_size"
+            android:layout_gravity="center"
+            android:background="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:contentDescription="@string/app_name"
+            android:textSize="30sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/txtSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:text="@string/txt_folder_name"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnChooseFav"
+        android:layout_width="@dimen/btn_back_size"
+        android:layout_height="@dimen/btn_back_size"
+        android:layout_margin="@dimen/app_margin"
+        android:backgroundTint="@color/fav_yellow"
+        android:layout_gravity="right"
+        android:tag="0"
+        android:background="@drawable/baseline_star_outline_24"
+        />
+
+    <TextView
+        android:id="@+id/txtWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="@dimen/app_margin"
+        android:textSize="@dimen/text_h1"
+        android:textColor="@color/black"
+        android:text="@string/txt_word"/>
+
+        <TextView
+            android:id="@+id/txtFurigana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_furigana"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="@dimen/app_margin"
+            android:layout_marginBottom="@dimen/app_margin"
+            android:textSize="@dimen/text_h5"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_marginHorizontal="@dimen/app_sub_margin"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/lbl_level"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_marginTop="@dimen/app_margin"
+                android:paddingLeft="@dimen/app_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:paddingVertical="@dimen/list_item_distance"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/black"
+                android:text="@string/txt_level">
+            </TextView>
+
+            <TextView
+                android:text="@string/lbl_meanings"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_normal"
+                android:paddingLeft="@dimen/app_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtMeaning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/list_item_distance"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                android:text="@string/txt_meanning">
+            </TextView>
+
+            <TextView
+                android:text="@string/lbl_romaji"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_normal"
+                android:paddingLeft="@dimen/app_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtRomaji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/list_item_distance"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                android:text="@string/txt_romaji">
+            </TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+        <LinearLayout
+                android:id="@+id/Buttons"
+                android:backgroundTint="@color/white"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:orientation="horizontal"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:background="@drawable/btn_radius"
+                    android:id="@+id/btnPrev"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_margin="@dimen/app_margin"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_word_prev"
+                    android:textSize="@dimen/text_size_normal"/>
+
+                <Button
+                    android:background="@drawable/btn_radius"
+                    android:id="@+id/btnNext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/app_margin"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_word_next"
+                    android:textSize="@dimen/text_size_normal"/>
+
+            </LinearLayout>
+
+
+</LinearLayout>

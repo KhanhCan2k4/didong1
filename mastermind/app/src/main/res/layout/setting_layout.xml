@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white">
+
+
+
+    <TextView
+        android:id="@+id/txtFavTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/setting_padding"
+        android:text="@string/setting_info"
+        android:textSize="@dimen/text_size_normal"
+        android:textStyle="bold"
+        android:layout_marginVertical="@dimen/setting_margin"/>
+
+    <TextView
+        android:id="@+id/txtRecentPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/setting_padding"
+        android:text="@string/setting_info"
+        android:textSize="@dimen/text_size_normal"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/setting_margin"/>
+
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginVertical="@dimen/gird_margin">
+
+        <ImageButton
+            android:id="@+id/btn_color0"
+            android:layout_width="@dimen/btn_color_size"
+            android:layout_height="@dimen/btn_color_size"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginLeft="@dimen/magin_color"
+            android:layout_marginRight="@dimen/magin_color"
+            android:layout_marginBottom="@dimen/magin_bot_color"
+            android:background="@drawable/btn_radius"
+            android:backgroundTint="@color/light_green" />
+
+        <ImageButton
+            android:id="@+id/btn_color1"
+            android:layout_width="@dimen/btn_color_size"
+            android:layout_height="@dimen/btn_color_size"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginLeft="@dimen/magin_color"
+            android:layout_marginRight="@dimen/magin_color"
+            android:background="@drawable/btn_radius"
+            android:backgroundTint="@color/red" />
+
+        <ImageButton
+            android:id="@+id/btn_color2"
+            android:layout_width="@dimen/btn_color_size"
+            android:layout_height="@dimen/btn_color_size"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginLeft="@dimen/magin_color"
+            android:layout_marginRight="@dimen/magin_color"
+            android:background="@drawable/btn_radius"
+            android:backgroundTint="@color/yellow" />
+
+        <ImageButton
+            android:id="@+id/btn_color3"
+            android:layout_width="@dimen/btn_color_size"
+            android:layout_height="@dimen/btn_color_size"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginLeft="@dimen/magin_color"
+            android:layout_marginBottom="@dimen/magin_bot_color"
+            android:background="@drawable/btn_radius"
+            android:backgroundTint="@color/Purple" />
+
+        <ImageButton
+            android:id="@+id/btn_color4"
+            android:layout_width="@dimen/btn_color_size"
+            android:layout_height="@dimen/btn_color_size"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginLeft="@dimen/magin_color"
+            android:background="@drawable/btn_radius"
+            android:backgroundTint="@color/Navy" />
+
+        <ImageButton
+            android:id="@+id/btn_color5"
+            android:layout_width="@dimen/btn_color_size"
+            android:layout_height="@dimen/btn_color_size"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginLeft="@dimen/magin_color"
+            android:background="@drawable/btn_radius"
+            android:backgroundTint="@color/skyblue" />
+
+        <ImageButton
+            android:id="@+id/btn_color6"
+            android:layout_width="@dimen/btn_color_size"
+            android:layout_height="@dimen/btn_color_size"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginLeft="@dimen/magin_color"
+            android:background="@drawable/btn_radius"
+            android:backgroundTint="@color/Pink" />
+
+        <ImageButton
+            android:id="@+id/btn_color7"
+            android:layout_width="@dimen/btn_color_size"
+            android:layout_height="@dimen/btn_color_size"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginLeft="@dimen/magin_color"
+            android:background="@drawable/btn_radius"
+            android:backgroundTint="@color/dark_green" />
+
+        <ImageButton
+            android:id="@+id/btn_color8"
+            android:layout_width="@dimen/btn_color_size"
+            android:layout_height="@dimen/btn_color_size"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_marginLeft="@dimen/magin_color"
+            android:background="@drawable/btn_radius"
+            android:backgroundTint="@color/light_gray" />
+    </GridLayout>
+
+
+</LinearLayout>
